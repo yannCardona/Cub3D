@@ -26,7 +26,7 @@ endif
 all: $(NAME)
 
 libmlx:
-	@cmake $(LIBMLX) -B $(LIBMLX)/build && make -C $(LIBMLX)/build -j4; \
+	@cmake $(LIBMLX) -B $(LIBMLX)/build && make -C $(LIBMLX)/build -j4
 
 $(LIBFT_A):
 	@cd lib/libft && make
@@ -35,7 +35,7 @@ $(OBJDIR)/%.o: %.c
 	@mkdir -p $(dir $@)
 	@$(CC) $(CFLAGS) -o $@ -c $< $(HEADERS)
 
-$(NAME): $(LIBFT_A) $(OBJS)
+$(NAME): $(LIBFT_A) $(OBJS) libmlx
 	@$(CC) $(OBJS) $(LIBS) $(HEADERS) -o $(NAME) -g
 	@printf "$(_SUCCESS) $(GREEN)- Executable ready.\n$(RESET)"
 
