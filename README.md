@@ -3,7 +3,7 @@ here is the full subject description: [en.subject.pdf](https://github.com/yannCa
 
 This Project is coded in C. It's inspired by the game Wolfenstein 3D.
 The Project works as a Raycasting Game Engine, where you can upload different maps and textures and place different enemies.
-The enemies follow you and you must not get catched by them. 
+The enemies follow you and you must not get caught. 
 
 You can compile the Project with 'make' and run it with './cub3D labyrinth.cub'
 
